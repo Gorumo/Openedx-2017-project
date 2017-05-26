@@ -1,0 +1,156 @@
+[
+    {
+        "course_chapters":[
+            {
+                "chapter_id":"84bc944d17294463b8400e18bca56fbb",
+                "chapter_name":"Section",
+                "sequentials":[
+                    {
+                        "sequential_id":"02c7a9bdc9f342a3b85acbd5c3f8d965",
+                        "sequential_name":"Subsection first",
+                        "verticals":[
+                            {
+                                "units":[
+                                    {
+                                        "concepts":[
+                                            "Honor code",
+                                            "Teaching assistants",
+                                            "Single subject",
+                                            "Online laboratories",
+                                            "Verified",
+                                            "Online",
+                                            "Cost",
+                                            "Completion"
+                                        ],
+                                        "data":" EdX courses consist of weekly learning sequences. Each learning sequence is composed of short videos interspersed with interactive learning exercises, where students can immediately practice the concepts from the videos. The courses often include tutorial videos that are similar to small on-campus discussion groups, an online textbook, and an online discussion forum where students can post and review questions and comments to each other and teaching assistants. Where applicable, online laboratories are incorporated into the course. For example, in edX's first MOOC &mdash; a circuits and electronics course &mdash; students built virtual circuits in an online lab. [7] EdX offers certificates of successful completion and some courses are credit-eligible. Whether or not a college or university offers credit for an online course is within the sole discretion of the school. [8] EdX offers a variety of ways to take courses, including verified courses where students have the option to audit the course (no cost) or to work toward an edX Verified Certificate (fees vary by course). For courses announced before December 7, 2015, there was an option to take honor code courses to work toward an Honor Code Certificate (no cost). [9] EdX also offers XSeries Certificates for completion of a bundled set of two to seven verified courses in a single subject (cost varies depending on the courses). ",
+                                        "unit_id":"13fc6a5287ea4afda6a6e9d3447d4b3a",
+                                        "unit_type":"html"
+                                    }
+                                ],
+                                "vertical_id":"b4dd2b4c257f41ef86800fb3e9c8afc3",
+                                "vertical_name":"Unit one"
+                            },
+                            {
+                                "units":[
+                                    {
+                                        "concepts":[
+                                            "Online platform",
+                                            "Online education",
+                                            "Degree",
+                                            "System",
+                                            "Online",
+                                            "College",
+                                            "Education"
+                                        ],
+                                        "data":" There are several problems with the traditional system of education. First of all, you need to pay thousands of dollars per term to attend a prestigious school. With all those budget cuts, busy classrooms, and course shortages, you won&rsquo;t always get the chance to study exactly what you want. It&rsquo;s no wonder why millions of students from all around the world opt for online degree programs or take at least one college course through an online platform. Online has to be the greatest revolution in contemporary education. It made a huge change in the system and opened great opportunities for everyone who wants to learn something. Nevertheless, online education is still related to stereotypes. People often think that online students are not smart enough for a traditional college or university, they are lazy, and they don&rsquo;t get &ldquo;real&rdquo; degrees. These claims discourage many people from taking online courses, so they get stuck in the traditional educational system that consumes a huge deal of money, nerves, and years of their lives. Allow us to explain why online is more awesome than you think. We have 5 advantages of online that will make you reconsider your attitude towards this type of education. ",
+                                        "unit_id":"477e0b1df7944aa09e593d33d215dfef",
+                                        "unit_type":"html"
+                                    }
+                                ],
+                                "vertical_id":"394e778d6e884accbbc3af46c38825c6",
+                                "vertical_name":"Unit blabla"
+                            }
+                        ]
+                    },
+                    {
+                        "sequential_id":"e8c318dce526452a8d5b162df47cd234",
+                        "sequential_name":"Subsection second",
+                        "verticals":[
+                            {
+                                "units":[
+                                    {
+                                        "concepts":[
+                                            "Bunker hill community college",
+                                            "United states",
+                                            "Distance education",
+                                            "Learning outcomes",
+                                            "Educational institutions",
+                                            "Computer science",
+                                            "Online",
+                                            "Learning",
+                                            "Programming",
+                                            "Blended",
+                                            "Data",
+                                            "Research"
+                                        ],
+                                        "data":" In addition to educational offerings, edX is utilized for research into learning and distance education by collecting learners' clicks and analyzing the data, as well as collecting demographics from each registrant. [8] [12] [13] [14] A team of researchers at Harvard and MIT, led by David Pritchard and Lori Breslow, released their initial findings in 2013. [15] EdX member schools and organizations also conduct their own research using data collected from their courses. [16] Research focuses on improving retention, course completion and learning outcomes in traditional campus courses and online. [17] EdX has engaged in a number of partnerships with educational institutions in the United States, China, Mongolia, Japan, and more to utilize edX courses in \"blended classrooms.\" [16] In blended learning models, traditional classes include an online interactive component. San Jose State University (SJSU) partnered with edX to offer 6.00xL Introduction to Computer Science and Programming , as a blended course at SJSU and released an initial report on the project in February 2013. Initial results showed a decrease in failure rates from previous semesters. The percentage of students required to retake the course dropped from 41% under the traditional format to 9% for those taking the edX blended course. [18] In Spring 2013, Bunker Hill Community College and Massachusetts Bay Community College implemented a SPOC, or small private online course. The colleges incorporated an MIT-developed Python programming course on EdX into their campus-based courses, and reported positive results. ",
+                                        "unit_id":"65a6921299cd4a70a336a7e26e5405d0",
+                                        "unit_type":"html"
+                                    }
+                                ],
+                                "vertical_id":"599249672ddf44a6832e59219688349b",
+                                "vertical_name":"Unit Two"
+                            }
+                        ]
+                    },
+                    {
+                        "sequential_id":"814c8834cab44ce7ab844cd5c41655e7",
+                        "sequential_name":"Subsection third",
+                        "verticals":[
+                            {
+                                "units":[
+                                    {
+                                        "concepts":[
+                                            "Online platform",
+                                            "Online education",
+                                            "Degree",
+                                            "System",
+                                            "Online",
+                                            "College",
+                                            "Education"
+                                        ],
+                                        "data":" There are several problems with the traditional system of education. First of all, you need to pay thousands of dollars per term to attend a prestigious school. With all those budget cuts, busy classrooms, and course shortages, you won&rsquo;t always get the chance to study exactly what you want. It&rsquo;s no wonder why millions of students from all around the world opt for online degree programs or take at least one college course through an online platform. Online has to be the greatest revolution in contemporary education. It made a huge change in the system and opened great opportunities for everyone who wants to learn something. Nevertheless, online education is still related to stereotypes. People often think that online students are not smart enough for a traditional college or university, they are lazy, and they don&rsquo;t get &ldquo;real&rdquo; degrees. These claims discourage many people from taking online courses, so they get stuck in the traditional educational system that consumes a huge deal of money, nerves, and years of their lives. Allow us to explain why online is more awesome than you think. We have 5 advantages of online that will make you reconsider your attitude towards this type of education. ",
+                                        "unit_id":"e792ce8a2c8543bcb721e55852b64d01",
+                                        "unit_type":"html"
+                                    }
+                                ],
+                                "vertical_id":"9941d1ff96a44e7fa2ba70055054ed51",
+                                "vertical_name":"Amazing Unit"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "course_id":"course",
+        "course_name":"Semantic export"
+    },
+    {
+        "course_chapters":[
+            {
+                "chapter_id":"2319af058fa74c29ab4d26e4d0a32c55",
+                "chapter_name":"Section 1",
+                "sequentials":[
+                    {
+                        "sequential_id":"1bb2a00c869e43b8ae93450f98abf565",
+                        "sequential_name":"Subsection 2",
+                        "verticals":[
+                            {
+                                "units":[
+                                    {
+                                        "concepts":[
+                                            "Online platform",
+                                            "Online education",
+                                            "Degree",
+                                            "System",
+                                            "Online",
+                                            "College",
+                                            "Education"
+                                        ],
+                                        "data":" There are several problems with the traditional system of education. First of all, you need to pay thousands of dollars per term to attend a prestigious school. With all those budget cuts, busy classrooms, and course shortages, you won&rsquo;t always get the chance to study exactly what you want. It&rsquo;s no wonder why millions of students from all around the world opt for online degree programs or take at least one college course through an online platform. Online has to be the greatest revolution in contemporary education. It made a huge change in the system and opened great opportunities for everyone who wants to learn something. Nevertheless, online education is still related to stereotypes. People often think that online students are not smart enough for a traditional college or university, they are lazy, and they don&rsquo;t get &ldquo;real&rdquo; degrees. These claims discourage many people from taking online courses, so they get stuck in the traditional educational system that consumes a huge deal of money, nerves, and years of their lives. Allow us to explain why online is more awesome than you think. We have 5 advantages of online that will make you reconsider your attitude towards this type of education. ",
+                                        "unit_id":"9774b74b39094c7c8db56d2668b9f5a7",
+                                        "unit_type":"html"
+                                    }
+                                ],
+                                "vertical_id":"4c42451cbea84fe99bd6f6d7836b9100",
+                                "vertical_name":"Unit"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "course_id":"course",
+        "course_name":"Second one course"
+    }
+]
