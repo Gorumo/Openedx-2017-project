@@ -52,7 +52,7 @@ class QuoteOfTheDayXBlock(XBlock):
         self.unit_id=self.unit_id[-32:]
         domain="http://192.168.33.10/"
         concepts={}
-        sparql_select = SPARQLWrapper("http://127.0.1.1:8080/rdf4j-server/repositories/1")
+        sparql_select = SPARQLWrapper("http://192.168.33.10:8080/rdf4j-server/repositories/1")
         sparql_select.setReturnFormat(JSON)
         select_start="""select ?html where { ?unit_url <http://www.semanticweb.org/EdxOntology/Main#consistsOf> ?html filter (contains(str(?unit_url), '"""
         select_what = self.unit_id

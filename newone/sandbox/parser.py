@@ -169,6 +169,7 @@ def concept_search(some_text):
     condidat_terms = []
     good_terms = [] 
     print "-------------"
+    
     #print sortedKeywords
     for cond_terms in sortedKeywords:
         find=reg.sub(' ', cond_terms[0])
@@ -193,7 +194,8 @@ def concept_search(some_text):
     totalKeywords = len(good_terms)
     #print "-------------"
     #print "AFTER DELETE"
-    #print good_terms
+    print len(condidat_terms)
+    print len(good_terms)
     return good_terms
 
 sql_db = MySQLdb.connect(host="localhost",    
@@ -236,8 +238,8 @@ post = {"author": "Mike", "text": "My first blog post!", "tags": ["mongodb", "py
 coll.insert(post)'''
 course_structure_array=[]
 
-sparql = SPARQLWrapper("http://127.0.1.1:8080/rdf4j-workbench/repositories/1/update")
-sparql_select = SPARQLWrapper("http://127.0.1.1:8080/rdf4j-server/repositories/1")
+sparql = SPARQLWrapper("http://192.168.33.10:8080/rdf4j-workbench/repositories/1/update")
+sparql_select = SPARQLWrapper("http://192.168.33.10:8080/rdf4j-server/repositories/1")
 sparql_select.setReturnFormat(JSON)
 select_start="""select ?a where { ?a <http://www.w3.org/2000/01/rdf-schema#label> ?c FILTER (str(?c) = '"""
 select_end="')}"
@@ -271,6 +273,8 @@ for course_id in published_courses_uniq_names:
                 #!!!!!!!!!Narrow space, because block_id of course is "course", not objectID
                 course_structure["course_id"]=course_block["block_id"]
                 course_structure["course_name"]=course_block["fields"]["display_name"]
+                #PRINT NAME
+                print("Course = "+course_structure["course_name"])
                 n_triple = "INSERT DATA { "+sem_link+str(course_id)+w3_label+"'"+course_structure["course_name"]+"'@en .}"
                 sparql.setQuery(n_triple) 
                 sparql.query()
@@ -385,7 +389,7 @@ for course_id in published_courses_uniq_names:
                                                         sparql.query()
                                                         # NLP - RAKE - WIKI 
                                                         unit_structure["concepts"]=concept_search(unit_structure["data"])
-                                                        print unit_structure["concepts"]
+                                                        #print unit_structure["concepts"]
                                                         for concept in unit_structure["concepts"]:
                                                             sparql_select.setQuery(select_start+concept+select_end)
                                                             results = sparql_select.query()
@@ -407,9 +411,10 @@ for course_id in published_courses_uniq_names:
                                                                 print(concept_id+" - "+concept)
                                                                 dbpedia_concept=concept.replace(' ','_')
                                                                 dbpedia_concept=upcase_first_letter(dbpedia_concept)
+                                                                #print(dbpedia_concept)
                                                                 n_triple = "INSERT DATA { "+sem_link+concept_id+w3_seeAlso+"'http://dbpedia.org/page/"+dbpedia_concept+"'@en .}"
-                                                                sparql.setQuery(n_triple)
-                                                                #print n_triple 
+                                                                #print(n_triple)
+                                                                sparql.setQuery(n_triple) 
                                                                 sparql.query()
                                                             else:   
                                                                 for result in res["results"]["bindings"]:
