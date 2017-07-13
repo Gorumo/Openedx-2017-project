@@ -238,8 +238,8 @@ post = {"author": "Mike", "text": "My first blog post!", "tags": ["mongodb", "py
 coll.insert(post)'''
 course_structure_array=[]
 
-sparql = SPARQLWrapper("http://192.168.33.10:8080/rdf4j-workbench/repositories/1/update")
-sparql_select = SPARQLWrapper("http://192.168.33.10:8080/rdf4j-server/repositories/1")
+sparql = SPARQLWrapper("http://95.161.165.103:8080/rdf4j-workbench/repositories/2/update")
+sparql_select = SPARQLWrapper("http://95.161.165.103:8080/rdf4j-server/repositories/2")
 sparql_select.setReturnFormat(JSON)
 select_start="""select ?a where { ?a <http://www.w3.org/2000/01/rdf-schema#label> ?c FILTER (str(?c) = '"""
 select_end="')}"
