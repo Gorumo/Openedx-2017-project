@@ -1,0 +1,76 @@
+PREFIX Main: <http://www.semanticweb.org/EdxOntology/Main#>
+select ?url where { 
+  ?course rdf:type Main:Course.
+  ?course Main:consistsOf ?chapters.
+  ?course <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> ?url .
+		?chapters Main:consistsOf ?seq.
+		?seq Main:consistsOf ?vertical.
+  
+    filter (contains(str(?vertical),"4c42451cbea84fe99bd6f6d7836b9100"))}
+
+
+    
+
+SELECT ?label
+WHERE 
+{
+?uri rdfs:label ?label .
+filter(?label="Polynomial"@en)
+}
+
+
+dbo:wikiPageExternalLink
+
+Linear systems
+
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+SELECT ?label
+WHERE { <http://dbpedia.org/resource/Lewis_Carroll>
+            dbpedia-owl:wikiPageExternalLink ?label }
+
+
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+SELECT COUNT(?link) as ?count WHERE { <http://dbpedia.org/resource/Integral> dbpedia-owl:wikiPageExternalLink ?link }
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+SELECT DISTINCT ?person ?nameExact ?label ?Fname
+where {
+
+     ?person rdfs:label ?label .
+     ?person rdfs:label "Windows"@en .
+     OPTIONAL { ?person dbp:name ?nameExact . }
+     OPTIONAL { ?person foaf:name ?Fname . }
+
+     
+
+}
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+SELECT ?uri ?label ?name
+WHERE {
+?uri rdfs:label "Windows"@en .
+?uri rdfs:label ?label  
+OPTIONAL { ?uri dbp:name ?name . }
+}
+
+
+
+
+Поиск ссылок на источники:
+
+find=find.replace(' ','_')
+                select_start="PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> SELECT COUNT(?link) as ?count WHERE { <http://dbpedia.org/resource/"+find+"> dbpedia-owl:wikiPageExternalLink ?link }"
+                sparql_dbpedia.setQuery(select_start)
+                results = sparql_dbpedia.query()
+                res = results.convert()
+                for result in res["results"]["bindings"]:
+                    res=result["count"]["value"]
+                print(find,res)
+                if res>0:
+                    good_terms.append(find)
