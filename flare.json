@@ -1,0 +1,49 @@
+
+{
+ "name": "Computer graphics",
+ "children": [
+	{
+	 "name": "Course 1",
+	 "children": [
+		{
+		 "name": "Block 1",
+		 "children": [
+			{"name": "Link", "size": 3938}
+		 ]
+		},
+		{
+		 "name": "Block 2",
+		 "children": [
+			{"name": "Link", "size": 3938}
+		 ]
+		},
+		{
+		 "name": "Block 3",
+		 "children": [
+			{"name": "Link", "size": 3938}
+		 ]
+		}]	
+	},
+	{
+	 "name": "Course 2",
+	 "children": [
+		{
+		 "name": "Block 1",
+		 "children": [
+			{"name": "Link", "size": 3938}
+		 ]
+		},
+		{
+		 "name": "Block 2",
+		 "children": [
+			{"name": "Link", "size": 3938}
+		 ]
+		},
+		{
+		 "name": "Block 3",
+		 "children": [
+			{"name": "Link", "size": 3938}
+		 ]
+		}]	
+	}]
+}
